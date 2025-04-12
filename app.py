@@ -6,13 +6,13 @@ import tensorflow as tf
 import os
 import soundfile as sf
 import tempfile
-import matplotlib as plt 
+import matplotlib.pyplot as plt
 
 # --------------------------------- PARTE 1: EXTRAIR FEATURES --------------------------------- #
 
 # Carregar o modelo e o scaler
-MODEL_PATH = "models/audio_emotion_model.keras"  # Example
-SCALER_PATH = "models/scaler.pkl"                # Example
+MODEL_PATH = r"C:\Users\Felipe\Documents\Trilha\projeto_IA\miniprojeto2\models\audio_emotion_model.keras"  # Example
+SCALER_PATH = r"C:\Users\Felipe\Documents\Trilha\projeto_IA\miniprojeto2\models\scaler.joblib"                # Example
 
 model = tf.keras.models.load_model(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)
